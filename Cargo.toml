@@ -1,0 +1,9 @@
+[package]
+name = "weather-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.18", features = ["derive", "wrap_help"] }
+dotenv = { version = "0.15.0", features = ["clap"] }
+reqwest = { version = "0.12.8", features = ["json", "blocking", "gzip", "deflate"] }
